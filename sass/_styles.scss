@@ -1,0 +1,334 @@
+body {
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.4;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	top: 0;
+}
+
+a {
+	color: $kj-green;
+	text-decoration: none;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+.wrap {
+	@include pie-clearfix();
+	margin: 0 auto;
+	width: 960px;
+}
+
+.error {
+	color: red;
+	display: block;
+	margin-bottom: 10px;
+}
+
+#nav {
+	background-color: #333;
+
+	ul {
+		@include pie-clearfix();
+
+		li {
+			float: left;
+
+			a {
+				display: block;
+				line-height: 50px;
+				padding: 0 10px;
+
+				&:hover {
+					color: darken($kj-green, 10%);
+				}
+			}
+		}
+
+		&:first-child {
+			float: left;
+		}
+
+		&:last-child {
+			float: right;
+		}
+	}
+}
+
+.small-splash {
+	background: url('../images/cotton.jpg') center center no-repeat;
+	background-size: cover;
+
+	h2 {
+		color: #fff;
+		font-size: 3em;
+		font-weight: 300;
+		margin: 0;
+		padding: 15px 0 20px;
+	}
+}
+
+form {
+
+	label {
+		color: $gray;
+		font-size: 14px;
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	input {
+		@include box-sizing(border-box);
+		border: 1px solid $lighter-gray;
+		border-radius: 4px;
+		padding: 2px 7px;
+		display: block;
+		height: 35px;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	textarea {
+		@include box-sizing(border-box);
+		border-radius: 4px;
+		padding: 7px;
+		border: 1px solid $lighter-gray;
+		width: 100%;
+	}
+
+	button {
+		@include button-reset();
+		border-radius: 4px;
+		display: block;
+		background-color: $kj-green;
+		color: #fff;
+		margin-top: 20px;
+		padding: 10px 20px;
+	}
+}
+
+.small-splash-contact {
+	position: relative;
+
+	.outer {
+		position: absolute;
+		top: 40px;
+		width: 100%;
+	}
+
+	h2 {
+		color: #fff;
+		font-size: 3em;
+		font-weight: 300;
+		margin: 0;
+		padding: 15px 0 20px;
+	}
+}
+
+.address {
+	font-size: 1.25em;
+
+	.lead {
+		font-size: 24px; 
+	}
+}
+
+#contact .lead {
+	margin-top: 0;
+}
+
+#splash {
+	background: url('../images/cotton.jpg') center center no-repeat;
+	background-size: cover;
+	border-bottom: 1px solid $gray;
+
+	ul {
+		@include pie-clearfix();
+
+		li {
+			float: left;
+
+			a {
+				color: #fff;
+				display: block;
+				line-height: 50px;
+				padding: 0 10px;
+
+				&:hover {
+					color: $kj-green;
+				}
+			}
+		}
+
+
+		&:first-child {
+			float: left;
+		}
+
+		&:last-child {
+			float: right;
+		}
+	}
+
+	nav.wrap {
+		border-bottom: 1px solid #fff;
+	}
+
+	.aspect-ratio {
+		height: 0;
+		padding-bottom: 45%;
+	}
+
+	section.wrap {
+		margin-top: 100px;
+	}
+
+	h1 {
+		margin: 0;
+		max-width: 400px;
+	}
+
+	p {
+		color: #fff;
+		font-size: 1.5em;
+		font-weight: 300;
+		line-height: 1.6;
+		margin: 0;
+	}
+}
+
+.content-section {
+	margin-top: 60px; 
+
+	h2 {
+		color: $kj-green;
+		font-size: 3em;
+		font-weight: 300;
+		margin: 0;
+	}
+
+	h3 {
+		color: $gray;
+		font-size: 1.5em;
+		font-weight: 300;
+		margin-top: 0;
+	}
+}
+
+.lead {
+	color: $gray;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+#call-to-action {
+	h2 {
+		margin-bottom: 20px;
+	}
+	
+	a {
+		@include button-reset;
+		background-color: $kj-green;
+		border-radius: 4px;
+		color: #fff;
+		display: block;
+		font-weight: 300;
+		font-size: 2em;
+		line-height: 70px;
+		margin: 10px auto 0;
+		text-decoration: none;
+		text-align: center;
+		width: 500px;
+	}
+}
+
+#footer {
+	background-color: #333;
+	color: #fff;
+	margin-top: 60px;
+
+	p {
+		@include pie-clearfix();
+		line-height: 50px;
+		margin: 0;
+
+		&:first-child {
+			float: left;
+		}
+
+		&:last-child {
+			float: right;
+		}
+	}
+}
+
+#specials {
+
+	img {
+		max-width: 100%;
+		width: auto;
+	}
+}
+
+.categories {
+	font-size: 1.5em;
+	font-weight: 300;
+
+	> ul {
+		margin-top: 20px;
+
+		> li {
+			margin-bottom: 20px;
+		}
+	}
+
+	.children {
+		margin-left: 20px;
+	}
+
+	li {
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+
+.product {
+	margin-bottom: 40px;
+
+	> a {
+		display: block;
+	}
+
+	img {
+		@include box-sizing(border-box);
+		border: 1px solid #ccc;
+		border-bottom: 0;
+		display: block;
+		max-width: 100%;
+	}
+
+	.caption {
+		border: 1px solid #ccc;
+		background-color: #eee;
+		padding: 7px 15px;
+
+		p {
+			margin: 0 0 7px;
+		}
+
+		a {
+			display: block !important;
+		}
+	}
+}
+

@@ -1,0 +1,58 @@
+// KELLIJANE VARIABLES
+
+$lighter-gray: #ccc;
+$light-gray: #999;
+$gray: #666;
+$dark-gray: #333;
+
+$kj-green: #7ebf00;
+
+// KELLIJANE MIXINS
+
+@mixin button-reset {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+@mixin col() {
+	float: left;
+	padding: 0 10px;
+}
+
+.col-block {
+	padding: 0 10px;
+	width: 100%;
+}
+
+.col-3 {
+	@include col();
+	width: 220px;
+}
+
+.offset-3 {
+	margin-left: 220px;
+}
+
+.col-4 {
+	@include col();
+	width: 300px;
+}
+
+.col-6 {
+	@include col();
+	width: 460px;
+}
+
+.col-8 {
+	@include col();
+	width: 620px;
+}
+
+.col-9 {
+	@include col();
+	width: 700px;
+}
